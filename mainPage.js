@@ -18,11 +18,7 @@ let flg;
 //    head.innerHTML="Case has been dismissed";
 // };
 
-// document.getElementById('endSession').addEventListener("click", function()
-//  {
-//     document.querySelector(".alert_box").style.display="flex";
 
-//  })
 let ltime;
 var current = new Date();
 ltime = current.toLocaleTimeString();
@@ -227,6 +223,24 @@ document.getElementById("closeNot").onclick = function () {
   // document.querySelector(".alert_box").style.display = "none";
 };
 
+
+document.getElementById('endSession').addEventListener("click", function()
+{
+ fetch( "  http://classroommonitoring.herokuapp.com/api/user/check_exam_ended/  " +inst_id)
+ .then(response => response.json()) // pass the data as promise to next then block
+ .then(dout => {
+
+  if(dout.msg=="exam has ended")
+  {
+    window.location.href="examRep.html";
+
+  }
+  
+ });
+ 
+
+
+ })
 //  document.getElementById('toast').addEventListener("click",function(){
 
 //     document.querySelector(".alert_box").style.display="flex";

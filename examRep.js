@@ -27,8 +27,6 @@ var theDiv7=document.getElementById("cent7");
 
 
 
-
-
     for (let i = 0; i < dataSize.length; i++) 
     {
       let dataCid=objectData.data.cases[i].case_id;
@@ -58,7 +56,6 @@ var theDiv7=document.getElementById("cent7");
   conf.innerHTML = confidenceVal;
      theDiv4.appendChild(conf);
 
-
 // ############################################################################################################
 
 let tstamp=objectData.data.cases[i].ts;
@@ -67,9 +64,7 @@ var t_s = document.createElement('div');
 t_s.innerHTML = tstamp;
 theDiv5.appendChild(t_s);
 
-
 // ##############################################################################################################
-
 
 let sNum=objectData.data.cases[i].student_number;
 
@@ -87,9 +82,16 @@ cIm.href=cImg;
 theDiv7.appendChild(cIm);
 theDiv7.appendChild(nl);
 
-
-
     }
+
+    document.getElementById('logProct').addEventListener("click", function()
+{
+ 
+   window.location.href="logOut.html";
+
+
+
+ })
 
 
    

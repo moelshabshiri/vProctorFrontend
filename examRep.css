@@ -19,7 +19,7 @@ body{
         /* width: 50% ;
         height: 100%; 
         overflow:hidden; */
-        background-color: white;
+    
 }
 /* li{
   list-style: none
@@ -40,6 +40,32 @@ body{
 /* p{
   display: inline;
 } */
+
+#ERInfo
+{
+  text-align: center;
+}
+#title{
+
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+#head{
+
+  background-color: #2a7c6f;
+  padding-bottom: 90px;
+
+}
+#center{
+
+  padding-top: 40px;
+
+
+
+}
+
 #cent{
 margin-right: 20px;
 /* padding-left: 20px; */
@@ -88,6 +114,25 @@ margin-right: 20px;
       /* margin-top: -265px;
         padding-left: 170px; */
       } 
+
+  #logProct{
+    margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 50px;
+  border: 1px solid;
+  margin-bottom: 40px;
+  background: #269482;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  }
   /* #center{
 text-align: center;
   } */
