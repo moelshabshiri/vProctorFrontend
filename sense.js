@@ -66,6 +66,29 @@ but2.addEventListener("click", (e) => {
   console.log("here");
 
  
+// <<<<<<< HEAD
+   e.preventDefault();
+ 
+//  fetch("http://10.40.32.236:5000/runmodel/"+senseVal+"/"+inst,{
+//   method: "POST",
+//   headers: {
+//     Accept: "application/json, text/plain, */*",
+//     "Content-Type": "application/json",
+//   },
+//   // body: JSON.stringify({
+  
+//   // }),
+
+// })
+
+// .then(cd =>{
+  window.location.href="mainPage.html";
+
+//  })
+//  console.log("here");
+//   // window.location.href="mainPage.html";
+//   console.log("after window");
+// =======
 
   e.preventDefault();
 
@@ -89,6 +112,7 @@ but2.addEventListener("click", (e) => {
   console.log("here");
   // window.location.href="mainPage.html";
   console.log("after window");
+// >>>>>>> c2b6d90305a2b6497ae51cb950c286c6a77455dd
 
   // window.location.href="mainPage.html";
 });

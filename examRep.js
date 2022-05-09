@@ -82,16 +82,31 @@ cIm.href=cImg;
 theDiv7.appendChild(cIm);
 theDiv7.appendChild(nl);
 
+
+
+
+// Close modal when user clicks outside of the modal box
+// window.onclick = function(event) {
+//     if (event.target == mpopup) {
+//         mpopup.style.display = "none";
+//     }
+// };
+
+
+
+
     }
 
     document.getElementById('logProct').addEventListener("click", function()
 {
- 
    window.location.href="logOut.html";
 
 
 
  })
+
+
+
 
 
    

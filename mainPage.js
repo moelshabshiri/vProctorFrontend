@@ -226,19 +226,18 @@ document.getElementById("closeNot").onclick = function () {
 
 document.getElementById('endSession').addEventListener("click", function()
 {
- fetch( "  http://classroommonitoring.herokuapp.com/api/user/check_exam_ended/  " +inst_id)
+ fetch( "http://classroommonitoring.herokuapp.com/api/user/check_exam_ended/" +inst_id)
  .then(response => response.json()) // pass the data as promise to next then block
  .then(dout => {
 
-  if(dout.msg=="exam has ended")
-  {
+  // if(dout.msg=="exam has ended")
+  // {
     window.location.href="examRep.html";
 
-  }
+  // }
   
  });
  
-
 
  })
 //  document.getElementById('toast').addEventListener("click",function(){
