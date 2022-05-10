@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VProctor</title>
-    <link rel="stylesheet" href="examRep.css">
-</head>
-<body>
-
-        <!-- <table id="cTable" rules="all">
+    <link rel="stylesheet" href="examRep.css" />
+  </head>
+  <body>
+    <!-- <table id="cTable" rules="all">
            <thead>
                <tr>
                    <th>Case ID</th>
@@ -35,57 +34,58 @@
 
            </tbody>
         </table> -->
-<div id="head">
+    <div id="head"></div>
 
-</div>
-
-<div id="info">
-
-        <h2 id ="title">End of Exam Report</h2>
-        <strong>
-
-        <p id="ERInfo"> The End of Exam Report Shows all Cases That Have Been Reproted or Dismissed By The Proctor During The Exam Session</p>
-        <br>
-      <p style="color:red"id="ERInfo"> C = Cheating </p><p style="color:rgb(59, 106, 28); padding-bottom: 10px;"id="ERInfo"> NC = Not Cheating</p>
-    </strong>
-    <button id="logProct"> Logout</button>
-
-    <hr style="width:75%; margin:auto;">
-</div>
-
-    <div id="shad">
-
-<div id="center" style="display: flex; justify-content: center;">
-         <p  id="cent"> 
-           <strong>CaseID</strong>  
-         </p>
-         <p  id="cent2"> 
-           <strong>ExamID</strong>  
-         </p>
-         <p  id="cent3"> 
-            <strong>Status</strong> 
+    <div id="info">
+      <h2 id="title">End of Exam Report</h2>
+      <strong>
+        <p id="ERInfo">
+          The End of Exam Report Shows all Cases That Have Been Reproted or
+          Dismissed By The Proctor During The Exam Session
         </p>
-        <p  id="cent4"> 
-            <strong>Confidence</strong>
+        <br />
+        <p style="color: red" id="ERInfo">C = Cheating</p>
+        <p style="color: rgb(59, 106, 28); padding-bottom: 10px" id="ERInfo">
+          NC = Not Cheating
         </p>
-        <p  id="cent5"> 
-            <strong>Time Stamp</strong>
-        </p>
-        <p  id="cent6"> 
-            <strong>Student Number</strong>
-        </p>
-        <p  id="cent7"> 
-            <strong>Case Image</strong>
-            <br>
-        </p>
+      </strong>
+      <button id="logProct">Logout</button>
+
+      <hr style="width: 75%; margin: auto" />
     </div>
-</div>
 
+    <div id="shad" class="shad">
+      <img
 
-
+        class="imagePopup"
+        id="imagePopup"
+      />
+      <div id="center" style="display: flex; justify-content: center">
+        <p id="cent">
+          <strong>CaseID</strong>
+        </p>
+        <p id="cent2">
+          <strong>ExamID</strong>
+        </p>
+        <p id="cent3">
+          <strong>Status</strong>
+        </p>
+        <p id="cent4">
+          <strong>Confidence</strong>
+        </p>
+        <p id="cent5">
+          <strong>Time Stamp</strong>
+        </p>
+        <p id="cent6">
+          <strong>Student Number</strong>
+        </p>
+        <p id="cent7">
+          <strong>Case Image</strong>
+          <br />
+        </p>
+      </div>
+    </div>
 
     <script src="examRep.js"></script>
-
-</body>
-
+  </body>
 </html>

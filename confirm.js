@@ -113,7 +113,8 @@ else
   })
 
   document.getElementById("confirm_but").onclick = function () {
-    location.href = "sense.html";
+    // location.href = "sense.html";
+    location.href = "examRep.html";
 };
 
 
