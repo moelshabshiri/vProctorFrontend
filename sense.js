@@ -95,7 +95,7 @@ but2.addEventListener("click", (e) => {
   document.getElementById("loader").style.display = "block";
   but2.style.display = "none";
 
-  fetch("http://10.40.32.236:5000/runmodel/" + senseVal + "/" + inst, {
+  fetch("http://10.7.29.26:5000/runmodel/" + senseVal + "/" + inst, {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",

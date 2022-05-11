@@ -18,7 +18,6 @@ let flg;
 //    head.innerHTML="Case has been dismissed";
 // };
 
-
 let ltime;
 var current = new Date();
 ltime = current.toLocaleTimeString();
@@ -72,21 +71,18 @@ function fetchRep() {
   )
     .then((res) => res.json())
     .then((out) => {
-      console.log(out)
+      console.log(out);
       if (out.msg == "Recent Case Retreived successfully") {
-
         toast.classList.add("active");
-      }
-      else if(out==undefined) {
-        console.log('else')
-        loadFlag=true;
+      } else if (out == undefined) {
+        console.log("else");
+        loadFlag = true;
         // return;
+      } else {
+        console.log("else");
+        loadFlag = true;
       }
-      else{
-        console.log('else')
-        loadFlag=true;
-      }
-      console.log('out2')
+      console.log("out2");
       caseid = out.data.case_details[0].case_id;
       stuNum = out.data.case_details[0].student_number;
 
@@ -105,8 +101,8 @@ function fetchRep() {
     })
     .then((response) => response.json())
     .then((json) => {
-      console.log('json')
-      console.log(json)
+      console.log("json");
+      console.log(json);
       let cnt = json.data;
       let i = 0;
       // console.log(json.urls[1]);
@@ -121,8 +117,8 @@ function fetchRep() {
       // };
     })
     .then((resu) => {
-      console.log(resu)
-      console.log('buttons')
+      console.log(resu);
+      console.log("buttons");
       document.getElementById("rep").onclick = function () {
         console.log("rep clicked");
         return fetch(
@@ -167,7 +163,6 @@ function fetchRep() {
             body: JSON.stringify({
               caseID: caseid,
               exam_instance_id: inst_id,
-
             }),
           }
         ).then((res) => {
@@ -223,23 +218,19 @@ document.getElementById("closeNot").onclick = function () {
   // document.querySelector(".alert_box").style.display = "none";
 };
 
+document.getElementById("endSession").addEventListener("click", function () {
+  fetch(
+    "http://classroommonitoring.herokuapp.com/api/user/end_exam /" + inst_id
+  )
+    .then((response) => response.json()) // pass the data as promise to next then block
+    .then((dout) => {
+      // if(dout.msg=="exam has ended")
+      // {
+      window.location.href = "examRep.html";
 
-document.getElementById('endSession').addEventListener("click", function()
-{
- fetch( "http://classroommonitoring.herokuapp.com/api/user/check_exam_ended/" +inst_id)
- .then(response => response.json()) // pass the data as promise to next then block
- .then(dout => {
-
-  // if(dout.msg=="exam has ended")
-  // {
-    window.location.href="examRep.html";
-
-  // }
-  
- });
- 
-
- })
+      // }
+    });
+});
 //  document.getElementById('toast').addEventListener("click",function(){
 
 //     document.querySelector(".alert_box").style.display="flex";

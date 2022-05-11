@@ -1,12 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 
 /* body{
     /* background: linear-gradient(
@@ -16,12 +14,12 @@
         #2a7c6f 50%, 
         #2a7c6f 100%
       ); */
-        /* width: 50% ;
+/* width: 50% ;
         height: 100%; 
         overflow:hidden; 
         
 }*/
-     
+
 /* li{
   list-style: none
 }
@@ -37,87 +35,89 @@
 
 } */
 
-
 /* p{
   display: inline;
 } */
 
-#ERInfo
-{
+.shad{
+  /* position: relative; */
+  /* background-color: #000; */
+}
+
+#imagePopup{
+  display: none;
+  position: fixed;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  max-width: 50%;
+}
+
+#ERInfo {
   text-align: center;
 }
-#title{
-
+#title {
   text-align: center;
   padding-top: 60px;
 }
 
-
-#head{
-
+#head {
   background-color: #2a7c6f;
   padding-bottom: 90px;
-
 }
-#center{
-
+#center {
   padding-top: 40px;
-
-
-
 }
 
-#cent{
-margin-right: 20px;
-/* padding-left: 20px; */
+#cent {
+  margin-right: 20px;
+  /* padding-left: 20px; */
 }
 
-#cent2{
+#cent2 {
   margin-right: 20px;
 
-/* margin-top: -265px;
+  /* margin-top: -265px;
   padding-left: 90px; */
-} 
+}
 
-#cent3{
+#cent3 {
   margin-right: 20px;
 
   /* margin-top: -265px;
     padding-left: 170px; */
-  } 
+}
 
-  #cent4{
-    margin-right: 20px;
-  
-    /* margin-top: -265px;
+#cent4 {
+  margin-right: 20px;
+
+  /* margin-top: -265px;
       padding-left: 170px; */
-    } 
+}
 
+#cent5 {
+  margin-right: 20px;
 
-    #cent5{
-      margin-right: 20px;
-    
-      /* margin-top: -265px;
+  /* margin-top: -265px;
         padding-left: 170px; */
-      } 
+}
 
+#cent6 {
+  margin-right: 20px;
 
-
-  #cent6{
-    margin-right: 20px;
-  
-    /* margin-top: -265px;
+  /* margin-top: -265px;
       padding-left: 170px; */
-    } 
-    #cent7{
-      margin-right: 20px;
-    
-      /* margin-top: -265px;
-        padding-left: 170px; */
-      } 
+}
+#cent7 {
+  margin-right: 20px;
 
-  #logProct{
-    margin: 0;
+  /* margin-top: -265px;
+        padding-left: 170px; */
+}
+
+#logProct {
+  margin: 0;
   position: absolute;
   top: 95%;
   left: 50%;
@@ -133,12 +133,10 @@ margin-right: 20px;
   font-weight: 700;
   cursor: pointer;
   outline: none;
-  }
-  /* #center{
+}
+/* #center{
 text-align: center;
   } */
-  
-
 
 /* #head {
     padding: 40px;
@@ -163,78 +161,90 @@ text-align: center;
     background-color: aquamarine;
   } */
 
-
-  .mpopup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+.mpopup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
-    position: relative;
-    background-color: #fff;
-    margin: auto;
-    padding: 0;
-    width: 450px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-    border-radius: 0.3rem;
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  width: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 0.3rem;
 }
 .modal-header {
-    padding: 2px 12px;
-    background-color: #ffffff;
-    color: #333;
-    border-bottom: 1px solid #e9ecef;
-    border-top-left-radius: 0.3rem;
-    border-top-right-radius: 0.3rem;
+  padding: 2px 12px;
+  background-color: #ffffff;
+  color: #333;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
-.modal-header h2{
-    font-size: 1.25rem;
-    margin-top: 14px;
-    margin-bottom: 14px;
+.modal-header h2 {
+  font-size: 1.25rem;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 .modal-body {
-    padding: 2px 12px;
+  padding: 2px 12px;
 }
 .modal-footer {
-    padding: 1rem;
-    background-color: #ffffff;
-    color: #333;
-    border-top: 1px solid #e9ecef;
-    border-bottom-left-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-    text-align: right;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  border-top: 1px solid #e9ecef;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  text-align: right;
 }
 
 .close {
-    color: #888;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
-.close:hover, .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* add animation effects */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
