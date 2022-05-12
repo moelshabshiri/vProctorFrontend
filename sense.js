@@ -82,7 +82,7 @@ but2.addEventListener("click", (e) => {
 // })
 
 // .then(cd =>{
-  window.location.href="mainPage.html";
+  // window.location.href="mainPage.html";
 
 //  })
 //  console.log("here");
@@ -95,7 +95,7 @@ but2.addEventListener("click", (e) => {
   document.getElementById("loader").style.display = "block";
   but2.style.display = "none";
 
-  fetch("http://10.7.29.26:5000/runmodel/" + senseVal + "/" + inst, {
+  fetch("http://10.40.47.137:5000/runmodel/" + senseVal + "/" + inst + "/" + "t2", {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -108,7 +108,7 @@ but2.addEventListener("click", (e) => {
     document.getElementById("loader").style.display = "none";
     but2.style.display = "block";
     window.location.href = "mainPage.html";
-  });
+  }); 
   console.log("here");
   // window.location.href="mainPage.html";
   console.log("after window");
